@@ -24,3 +24,13 @@ int main() {        // inisialisasi data
     int ditolak = 0;
     vector<string> status;
 
+    for (int i = 0; i < 20; i++) {      // pengolahan data
+        string s = getStatus(matematika[i], bahasa_inggris[i]);
+        status.push_back(s);
+        if (s == "diterima") {
+            diterima++;
+        }
+        else {
+            ditolak++;
+        }
+    }
