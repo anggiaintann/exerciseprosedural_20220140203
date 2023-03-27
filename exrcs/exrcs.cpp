@@ -34,3 +34,14 @@ int main() {        // inisialisasi data
             ditolak++;
         }
     }
+
+    cout << "nama\tstatus" << endl;     // output ke layar
+    for (int i = 0; i < 20; i++) {
+        cout << nama[i] << "\t" << status[i] << endl;
+    }
+
+    cout << "Total kandidat diterima: " << diterima << endl;
+    cout << "Total kandidat ditolak: " << ditolak << endl;
+
+    return 0;
+}
